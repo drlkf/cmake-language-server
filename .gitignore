@@ -11,3 +11,10 @@ coverage.xml
 
 .pdm-python
 __pypackages__/
+
+.pdm-build/
+debian/.debhelper/
+debian/*debhelper*
+debian/cmake-language-server/
+debian/cmake-language-server.substvars
+debian/files

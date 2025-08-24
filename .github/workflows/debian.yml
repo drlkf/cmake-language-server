@@ -1,0 +1,24 @@
+name: deb-package
+
+on:
+  workflow_run:
+    workflows: [Tests]
+    types: [completed]
+
+jobs:
+  build-deb:
+    strategy:
+      matrix:
+        dist:
+          - bookworm
+          - trixie
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jtdor/build-deb-action@v1
+        env:
+          DEB_BUILD_OPTIONS: noautodbgsym
+        with:
+          docker-image: debian:${{ matrix.dist }}
+          buildpackage-opts: --build=binary --no-sign

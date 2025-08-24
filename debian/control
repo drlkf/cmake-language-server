@@ -1,0 +1,17 @@
+Source: cmake-language-server
+Section: editors
+Priority: optional
+Maintainer: drlkf <drlkf@drlkf.net>
+Build-Depends:
+  debhelper (>= 9),
+  git,
+  python3-all (>= 3.11),
+  dh-virtualenv (>= 1.2),
+
+Package: cmake-language-server
+Architecture: all
+Pre-Depends:
+  python3 (>= 3.11)
+Depends:
+  ${misc:Depends},
+Description: CMake Language Server

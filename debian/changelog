@@ -1,0 +1,5 @@
+cmake-language-server (0.1.11) UNRELEASED; urgency=medium
+
+  * Initial release.
+
+ -- drlkf <drlkf@drlkf.net>  Mon, 25 Aug 2025 00:56:25 +0200
