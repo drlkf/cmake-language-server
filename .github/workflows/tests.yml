@@ -45,10 +45,3 @@ jobs:
           tox
         env:
           os: ${{ matrix.os }}
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          flags: unittests
-          name: Python ${{ matrix.python }} on ${{ matrix.os }}
-          fail_ci_if_error: false
