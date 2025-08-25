@@ -1,5 +1,8 @@
-cmake-language-server (0.1.11) UNRELEASED; urgency=medium
+cmake-language-server (0.1.11) stable; urgency=medium
 
   * Initial release.
+  * build: add debian files
+  * ci: disable codecov upload
+  * ci: disable pypi push
 
- -- drlkf <drlkf@drlkf.net>  Mon, 25 Aug 2025 00:56:25 +0200
+ -- drlkf <drlkf@drlkf.net>  Mon, 25 Aug 2025 02:02:13 +0200
