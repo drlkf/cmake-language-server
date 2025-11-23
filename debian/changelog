@@ -1,3 +1,11 @@
+cmake-language-server (0.1.12) stable; urgency=medium
+
+  * ci: add semantic-release config
+  * fix: change arch from all to any
+  * chore: add mechanicus workdir to gitignore
+
+ -- drlkf <drlkf@drlkf.net>  Sun, 23 Nov 2025 02:20:09 +0100
+
 cmake-language-server (0.1.11) stable; urgency=medium
 
   * Initial release.
