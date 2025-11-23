@@ -9,7 +9,7 @@ Build-Depends:
   dh-virtualenv (>= 1.2),
 
 Package: cmake-language-server
-Architecture: all
+Architecture: any
 Pre-Depends:
   python3 (>= 3.11)
 Depends:
